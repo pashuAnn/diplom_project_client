@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "../CartItem/CartItem";
-import { deleteAllItemsAction } from "../../../store/reducers/cartReducer";
+import { deleteAllItemsAction } from "../../../core/redux/redusers/cardReducer"
 import s from "./CartContainer.module.css";
 import { Link } from "react-router-dom";
 export default function CartContainer() {

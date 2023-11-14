@@ -9,16 +9,16 @@ import SingleItemPage from'./pages/SingleItemPage/SingleItemPage'
 import AllItemPage from './pages/AllItemPage/AllItemPage'
 import SalesPage from './pages/SalesPage/SalesPage'
 import SingUpPage from './pages/SingUpPage/SingUp'
-import ErrorViewPage from './pages/ErrorViewPage/ErrorViewPage'
+import ErrorView from './pages/ErrorViewPage/ErrorView'
 import Footer from './components/Footer/Footer'
-// import { useDispatch } from 'react-redux';
-// import { useEffect } from 'react';
+ import { useDispatch } from 'react-redux';
+ import { useEffect } from 'react';
 
 function App() {
-  // const dispatch = useDispatch()
+    const dispatch = useDispatch()
 
-  // useEffect(() => dispatch(getAllCategories), [])
-  // useEffect(() => dispatch(getAllProducts), [])
+    useEffect(() => dispatch(getAllCategories), [])
+    useEffect(() => dispatch(getAllProducts), [])
 
   return (
     <div className="App">
@@ -33,7 +33,7 @@ function App() {
         <Route path="/allProducts" element={<AllItemPage/>}></Route>
         <Route path="/sale" element={<SalesPage/>}></Route>
         <Route path="singUp" element={<SingUpPage/>}></Route>
-        <Route path="/*" element={<ErrorViewPage/>}></Route>
+        <Route path="/*" element={<ErrorView/>}></Route>
       </Routes>
 
       <Footer/>
@@ -42,3 +42,19 @@ function App() {
 }
 
 export default App;
+
+export const shuffleArray = (array) => {
+  let shuffledArray = [];
+  let usedIndexes = [];
+  let i = 0;
+  while (i < array.length) {
+    let randomNumber = Math.floor(Math.random() * array.length);
+    if (!usedIndexes.includes(randomNumber)) {
+      shuffledArray.push(array[randomNumber]);
+      usedIndexes.push(randomNumber);
+      i++;
+    }
+  }
+  console.log(shuffledArray);
+  return shuffledArray;
+};

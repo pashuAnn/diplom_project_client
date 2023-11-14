@@ -1,7 +1,9 @@
 import React from 'react'
-
-export default function FormButton() {
+import s from './FormButton.module.css'
+export default function FormButton({children,color}) {
   return (
-    <div>FormButton</div>
+    <button className={[s.button,s[color]].join(' ')}>
+      {children}
+    </button>
   )
 }
