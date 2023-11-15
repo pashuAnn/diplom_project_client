@@ -23,7 +23,7 @@ export default function NavMenu() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           PARADISE
-          <i class="fa-brands fa-pagelines"></i>
+          <i className="fa-brands fa-pagelines"></i>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />

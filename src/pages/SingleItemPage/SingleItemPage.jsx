@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { getSingleProduct } from "../../UI/requsts/getProducts";
+import { getSingleProduct } from "../../UI/requsts/getAllProducts";
 import s from "./SingleItem.module.css";
 import { addToCartAction } from "../../core/redux/redusers/cardReducer";
 

@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import ProductContainer from "../../components/Products/ProductContainer";
-import { getProductsByCategory } from "../../UI/requsts/getProducts";
+import { getProductsByCategory } from "../../UI/requsts/getAllProducts";
 import FIlterForms from "../../components/FilterForms/FilterForms";
 
 export default function ItemsFromCategory() {

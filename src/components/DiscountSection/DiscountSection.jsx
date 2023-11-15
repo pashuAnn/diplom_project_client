@@ -1,7 +1,7 @@
 import React from "react";
 import s from "./DiscountSection.module.css";
 import { useForm } from "react-hook-form";
-import { adNewProduct } from "../../UI/requsts/getProducts";
+import { adNewProduct } from "../../UI/requsts/getAllProducts";
 export default function DiscountSection() {
   const {
     register,

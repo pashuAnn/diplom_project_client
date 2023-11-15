@@ -1,0 +1,138 @@
+.cartItemContainer {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #6f6f6f;
+    border-top: 1px solid #6f6f6f;
+    position: relative;
+    margin: 10px 0;
+    @media(max-width:1300px){
+      width: 400px;
+      
+      } 
+    @media (max-width:800px){
+     width: 250px;
+     
+       }
+    
+  
+  }
+  .cartItemWrapper{
+    width: 800px;
+  display: flex;
+  @media (max-width:1300px){
+    flex-direction: column;
+    align-items: center;
+    }
+    @media (max-width:800px){
+      flex-direction: column;
+      align-items: center;
+      }
+  
+  }
+  .cartItemWrapper>div>a>img{
+    margin: 10px 0;
+    
+    max-width: 500px;
+    max-height: 300px;
+    object-fit: cover;
+    @media (max-width:1300px){
+      max-width: 550;
+      max-height: 350px;
+      }
+    @media (max-width:800px){
+      max-width: 400;
+      max-height: 200px;
+        }
+  }
+  .cartItemInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    justify-content: space-between;
+    
+    @media(max-width:1300px){
+      width: 350px;
+      margin: 0;
+      } 
+    @media (max-width:800px){
+     width: 200px;
+       font-size: 15px ;
+       margin: 0;
+       }
+    
+       
+  }
+  .cartItemInfo>a > h2 {
+    margin: 10px 0px;
+  }
+  .cartItemInfo>a > p {
+    color: grey;
+  }
+  
+  .priceBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 200px;
+    margin: 20px 0;
+    font-size: 18px;
+   
+    @media (max-width:800px){
+      width: 150px;
+      font-size: 15px;
+      }
+  }
+  
+  .discont {
+    font-size: 20px;
+    color: #db3e3e;
+    @media (max-width:800px){
+   
+      font-size: 17px;
+      }
+  }
+  .price {
+    text-decoration: line-through;
+    color: grey;
+  }
+  .counterContainer {
+    display: flex;
+  
+    align-items: center;
+    margin: 0 0 15px ;
+  }
+  .counterBtn {
+    all: unset;
+    cursor: pointer;
+    padding: 2px 15px;
+    border: 0.5px solid rgb(255, 255, 255);
+    background-color: #333;
+    color: white;
+  }
+  .counterContainer > span {
+    font-size: 17px;
+    margin: 0px 10px;
+  }
+  .deleteBtn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 50%;
+    transition: all 0.2s ease;
+    @media(max-width:1300px){
+      display: none;
+      
+      } 
+    @media (max-width:800px){
+      display: none;
+    
+     
+       }
+  }
+   .deleteBtn:hover{
+    opacity: 100%;
+    color: #db3e3e;
+    scale: 1.1;
+  }
