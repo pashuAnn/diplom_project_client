@@ -20,8 +20,8 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getAllCategories());
-    dispatch(getAllProducts());
+    // dispatch(getAllCategories());
+    // dispatch(getAllProducts());
   }, [dispatch]);
 
   return (
