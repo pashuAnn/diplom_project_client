@@ -1,9 +1,9 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import {
-  decrementItemAction,
-  deleteItemFromCartAction,
-  incrementItemAction,
+  decrementItem,
+  deleteItemFromCart,
+  incrementItem,
 } from "../../../core/redux/redusers/cardReducer";
 import { Link } from "react-router-dom";
 import s from "./CartItem.module.css";
@@ -55,14 +55,14 @@ export default function CartItem({
           <div className={s.counterContainer}>
             <button
               className={s.counterBtn}
-              onClick={() => dispatch(decrementItemAction(id))}
+              onClick={() => dispatch(decrementItem(id))}
             >
               -
             </button>
             <span>{count}</span>
             <button
               className={s.counterBtn}
-              onClick={() => dispatch(incrementItemAction(id))}
+              onClick={() => dispatch(incrementItem(id))}
             >
               +
             </button>
@@ -71,7 +71,7 @@ export default function CartItem({
 
         <div
           className={s.deleteBtn}
-          onClick={() => dispatch(deleteItemFromCartAction(id))}
+          onClick={() => dispatch(deleteItemFromCart(id))}
         >
           <i class="fa-solid fa-trash"></i>
         </div>

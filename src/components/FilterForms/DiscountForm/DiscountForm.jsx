@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { getDiscontProductsAction } from "../../../core/redux/redusers/allProductsReducer";
+import { getDiscontProducts } from "../../../core/redux/redusers/allProductsReducer";
 import { useDispatch } from "react-redux";
-import { getDiscontProductsByCategoryAction } from "../../../core/redux/redusers/productsByCatReduser";
+import { getDiscontProductsByCategory } from "../../../core/redux/redusers/productsByCatReduser";
 import "./DiscountForm.css";
 export default function DiscontForm() {
   const dispatch = useDispatch();
@@ -12,9 +12,10 @@ export default function DiscontForm() {
 
   const get_discont = (e) => {
     
-    dispatch(getDiscontProductsAction(e.target.checked));
+    dispatch(getDiscontProducts
+    (e.target.checked));
 
-    dispatch(getDiscontProductsByCategoryAction(e.target.checked));
+    dispatch(getDiscontProductsByCategory(e.target.checked));
   
   };
 

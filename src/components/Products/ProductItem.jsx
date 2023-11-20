@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCartAction } from "../../core/redux/redusers/cardReducer";
+import { addToCart } from "../../core/redux/redusers/cardReducer";
 import s from "./ProductsItem.module.css";
 export default function Item({ id, title, image, price, discont_price,description }) {
   const dispatch = useDispatch();
@@ -33,7 +33,7 @@ const discont = Math.floor(((price - discont_price) / price) * 100);
      
        
         <p>{description}</p>
-        <button className={s.add_btn} onClick={()=>dispatch(addToCartAction({id,title,image,price,discont_price,description}))}>Add to cart</button> 
+        <button className={s.add_btn} onClick={()=>dispatch(addToCart({id,title,image,price,discont_price,description}))}>Add to cart</button> 
       </div>
     </div>
   

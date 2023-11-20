@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getSingleProduct } from "../../UI/requsts/getAllProducts";
 import s from "./SingleItem.module.css";
-import { addToCartAction } from "../../core/redux/redusers/cardReducer";
+import { addToCart } from "../../core/redux/redusers/cardReducer";
 
 export default function SingleItemPage() {
   const dispatch = useDispatch();
@@ -12,14 +12,14 @@ export default function SingleItemPage() {
   const singleProductState = useSelector((store) => store.singleProduct);
   console.log(singleProductState);
   const { title, price, description, image, discont_price } = singleProductState;
-  const link = `http://localhost:3333${image}`;
+  const  link  = `http://localhost:3333${image}`;
   const discont = Math.floor(((price - discont_price) / price) * 100);
   return (
     <div className={s.singleProduct}>
       <div className={s.details}>
         
         <div className={s.bigImg}>
-        <img src={link} alt={title} />
+        <img src={Link} alt={title} />
         </div>
      
      <div className={s.box}>
@@ -41,7 +41,7 @@ export default function SingleItemPage() {
     
      <p>{description}</p>
 
-     <button className={s.cart} onClick={()=>dispatch(addToCartAction({id,title,description,price,image}))}>Add to cart</button>
+     <button className={s.cart} onClick={()=>dispatch(addToCart({id,title,description,price,image}))}>Add to cart</button>
      </div>
       </div>
     </div>

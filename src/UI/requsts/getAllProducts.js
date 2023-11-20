@@ -1,17 +1,19 @@
-import { loadAllProductsAction } from "../../core/redux/redusers/allProductsReducer";
+import { loadAllProducts } from "../../core/redux/redusers/allProductsReducer";
 import { loadProductByCategory } from "../../core/redux/redusers/productsByCatReduser";
-import { loadSingleProductAction } from "../../core/redux/redusers/singleProdReducer";
+import { loadSingleProduct } from "../../core/redux/redusers/singleProdReducer";
 import { serverLink } from "./server";
 
-export const getAllProducts = (dispatch) => {
+export const getAllProducts = () => {
+    return (dispatch) => {
     fetch(`${serverLink}/products/all`)
     .then(res => res.json())
-.then(json=> dispatch(loadAllProductsAction(json)))
+.then(json=> dispatch(loadAllProducts(json)))
+    }
 }
 
 
 export const getProductsByCategory = id => {
-    return dispatch =>{
+    return (dispatch) => {
         fetch(`${serverLink}/categories/${id}`)
         .then(res=>res.json())
         .then(json => dispatch(loadProductByCategory(json)))
@@ -22,7 +24,7 @@ export const getSingleProduct = id => {
     return dispatch => {
         fetch(`${serverLink}/products/${id}`)
         .then(res=>res.json())
-        .then(json => dispatch(loadSingleProductAction(json[0])))
+        .then(json => dispatch(loadSingleProduct(json[0])))
     }
 }
 

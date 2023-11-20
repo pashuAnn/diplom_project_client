@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { filterProductsAction } from '../../../core/redux/redusers/allProductsReducer'
-import { filterProductsByCategoryAction } from '../../../core/redux/redusers/productsByCatReduser'
+import { filterProducts } from '../../../core/redux/redusers/allProductsReducer'
+import { filterProductsByCategory } from '../../../core/redux/redusers/productsByCatReduser'
 import s from'./FilterForm.module.css'
 export default function FilterForm() {
   const dispatch = useDispatch()
@@ -11,9 +11,9 @@ export default function FilterForm() {
     const {min,max} = e.target
     const minValue = min.value || 0;
     const maxValue = max.value || Infinity;
-    dispatch(filterProductsAction({minValue,maxValue}))
+    dispatch(filterProducts({minValue,maxValue}))
     
-    dispatch(filterProductsByCategoryAction({minValue,maxValue})
+    dispatch(filterProductsByCategory({minValue,maxValue})
     )
   }
   
