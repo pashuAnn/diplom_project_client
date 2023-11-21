@@ -62,7 +62,7 @@ export default function CartContainer() {
             </div>
             <Link to={"/allProducts"}>
               <div className={s.returnBtn}>
-                <i class="fa-solid fa-cart-shopping"> </i>
+                <i className="fa-solid fa-cart-shopping"> </i>
                 RETURN TO PRODUCTS
               </div>
             </Link>

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getSingleProduct } from "../../UI/requsts/getAllProducts";
 import s from "./SingleItem.module.css";
@@ -9,19 +9,18 @@ export default function SingleItemPage() {
   const dispatch = useDispatch();
   const { id } = useParams();
   useEffect(() => {
-    (getSingleProduct(id));
-   }, [dispatch, id]);
+    dispatch(getSingleProduct(id)); 
+  }, [dispatch, id]);
   const singleProductState = useSelector((store) => store.singleProduct);
   console.log(singleProductState);
   const { title, price, description, image, discont_price } = singleProductState;
-  const  link  = `http://localhost:3333${image}`;
+  const link = `http://localhost:3333${image}`; 
   const discont = Math.floor(((price - discont_price) / price) * 100);
   return (
     <div className={s.singleProduct}>
       <div className={s.details}>
-        
         <div className={s.bigImg}>
-        <img src={Link} alt={title} />
+          <img src={link} alt={title} /> 
         </div>
      
      <div className={s.box}>

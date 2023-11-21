@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import { Button } from "../Button/Button";
 
@@ -22,8 +22,8 @@ export default function NavMenu() {
       <nav className="navbar">
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-          PARADISE
-          <i className="fa-brands fa-pagelines"></i>
+          BackYard
+          <i className="fa-solid fa-house-tree"></i>
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -58,7 +58,7 @@ export default function NavMenu() {
             </li>
             <li className="nav-item">
               <Link to="/cart" className="nav-links" onClick={closeMobileMenu}>
-                <i class="fa-solid fa-bag-shopping"></i>
+                <i className="fa-solid fa-bag-shopping"></i>
               </Link>
             </li>
             <li>

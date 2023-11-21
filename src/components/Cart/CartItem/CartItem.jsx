@@ -73,7 +73,7 @@ export default function CartItem({
           className={s.deleteBtn}
           onClick={() => dispatch(deleteItemFromCart(id))}
         >
-          <i class="fa-solid fa-trash"></i>
+          <i className="fa-solid fa-trash"></i>
         </div>
       </div>
     </div>
