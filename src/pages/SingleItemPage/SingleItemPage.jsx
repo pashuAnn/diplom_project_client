@@ -8,7 +8,9 @@ import { addToCart } from "../../core/redux/redusers/cardReducer";
 export default function SingleItemPage() {
   const dispatch = useDispatch();
   const { id } = useParams();
-  useEffect(() => dispatch(getSingleProduct(id)), []);
+  useEffect(() => {
+    (getSingleProduct(id));
+   }, [dispatch, id]);
   const singleProductState = useSelector((store) => store.singleProduct);
   console.log(singleProductState);
   const { title, price, description, image, discont_price } = singleProductState;

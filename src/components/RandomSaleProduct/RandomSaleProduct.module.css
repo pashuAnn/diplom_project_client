@@ -1,0 +1,37 @@
+.random{
+    background-color: #fff;
+    padding: 4rem;
+    position: relative;
+  }
+  .title {
+      color: black;
+      text-align: center;
+      font-size: 30px;
+      
+    }
+  
+  .randomContainer {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      max-width: 1120px;
+      width: 90%;
+      margin: 0 auto;
+  }
+  
+  .randomWrapper {
+      position: relative;
+      margin: 50px 0 45px;
+    }
+    .randomItems {
+      margin-bottom: 24px;
+    }
+    
+    
+    @media only screen and (min-width: 1024px) {
+      .randomItems {
+        display: flex;
+      }
+    }
+    
+    

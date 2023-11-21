@@ -1,0 +1,69 @@
+.discountSection {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    height: 50vh;
+    width: 100%;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  }
+  .discountContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 600px;
+  }
+  .discountText {
+    color: aliceblue;
+  }
+  .discountText > h2 {
+    font-size: 5em;
+  }
+  
+  .discountText > h3 {
+    font-size: 2.5em;
+  }
+  
+  .discountForm {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  .discountForm > input {
+    all: unset;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 10px 0 10px 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 290px;
+  }
+  .error {
+    all: unset;
+    color: rgba(255, 255, 255, 0.479);
+    margin-top: 10px;
+  }
+  
+  .discountForm > button {
+    width: 300px;
+    padding: 10px 0;
+    background: #2d9a6e92;
+  
+    overflow: hidden;
+    margin-top: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    color: white;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1em;
+  }

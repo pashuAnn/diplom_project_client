@@ -1,0 +1,50 @@
+.filterWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .filterWrapper > p {
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .filterWrapper > input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  .filterWrapper > input {
+    all: unset;
+  
+    overflow: hidden;
+    border: 0.5px solid rgba(0, 0, 0, 0.536);
+    width: 70px;
+    padding: 2px 0 2px 10px;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    opacity: 50%;
+    transition: all 0.3s ease;
+  }
+  .filterWrapper > input:hover {
+    opacity: 100%;
+    scale: 1.1;
+  }
+  .filterWrapper > button {
+    width: 60px;
+    padding: 2px 0 2px 0px;
+    background: #2d9a6e92;
+  
+    overflow: hidden;
+    border: 0.5px solid rgba(255, 255, 255, 0.5);
+  
+    color: white;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1em;
+  }

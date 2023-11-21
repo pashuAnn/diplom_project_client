@@ -1,0 +1,31 @@
+.sortForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.sortForm > p{
+    margin-right: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+
+.sortForm>select{
+   
+    all: unset;
+    overflow: hidden;
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    width: 150px;
+    padding: 2px 0px 2px 10px;
+   color: grey;
+   border-radius: 5px;
+   cursor: pointer;
+   opacity: 50%;
+   transition: all 0.3s ease;
+}
+.sortForm>select:hover{
+    opacity: 100%;
+    scale: 1.05;
+}

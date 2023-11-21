@@ -1,0 +1,26 @@
+.catalog{
+    background-color: #fff;
+    padding: 4rem;
+  }
+  .catalogContainer{
+    display: flex;
+    flex-flow:column ;
+    align-items: center;
+      max-width: 1120px;
+      width: 90%;
+      margin: 0 auto;
+    }
+    .catalogWrapper{
+      position: relative;
+    margin: 50px 0 45px;
+  }
+  .catalogItems{
+    margin-bottom: 24px;
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .catalogItems {
+      display: flex;
+    }
+  }
+  

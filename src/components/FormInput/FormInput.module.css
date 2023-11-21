@@ -1,0 +1,18 @@
+.input {
+    all: unset;
+    border-bottom: 1px solid #CFD8DC;
+      padding: 14px 16px;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    
+    .input:hover {
+     
+      border-bottom: 1px solid #4dff9a;
+    }
+  
+    .input:focus {
+      scale: 1.01;
+  
+      border-bottom: 1px solid #4dff9a;
+    }
