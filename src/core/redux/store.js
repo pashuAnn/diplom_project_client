@@ -1,16 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import categoriesReducer from '../../core/redux/redusers/categoriesReducer'
-import productsByCatReducer from '..//../core/redux/redusers/productsByCatReduser';
-import allProductsReducer from '..//../core/redux/redusers/allProductsReducer';
-import singleProdReducer from '../../core/redux/redusers/singleProdReducer';
-import cardReducer from '../../core/redux/redusers/cardReducer';
+import categoriesSlice from '../../core/redux/redusers/categoriesSlice'
+import productsByCatSlice from '..//../core/redux/redusers/productsByCatSlice';
+import allProductsSlice from '..//../core/redux/redusers/allProductsSlice';
+import singleProdSlice from '../../core/redux/redusers/singleProdSlice';
+import cardSlice from '../../core/redux/redusers/cardSlice';
 
 export const store = configureStore({
   reducer: {
-    categories: categoriesReducer,
-    productsByCategory: productsByCatReducer,
-    allProducts: allProductsReducer,
-    singleProduct: singleProdReducer,
-    cart: cardReducer,
+    categories: categoriesSlice,
+    productsByCategory: productsByCatSlice,
+    allProducts: allProductsSlice,
+    singleProduct: singleProdSlice,
+    cart: cardSlice,
   },
 });

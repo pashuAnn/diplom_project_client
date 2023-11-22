@@ -7,7 +7,7 @@ export default function ErrorView() {
       <div className={s.notFoundWrapper}>
       <p>OOPS... SOMETHING WENT WRONG,PAGE WAS NOT FOUND</p>
       <Link to={'/'}>
-      <div className={s.homeBtn}><i class="fa-solid fa-arrow-left-long"></i>
+      <div className={s.homeBtn}><i className="fa-solid fa-arrow-left-long"></i>
       Back to the home page
       </div>
       </Link>

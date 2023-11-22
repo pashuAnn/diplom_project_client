@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from '../Button/Button'
 import './HomeSection.css'
-import { Link } from 'react-router-dom'
 export default function HomeSection() {
   return (
     
@@ -16,7 +15,7 @@ export default function HomeSection() {
           buttonSize='btn--large'
           link='/sale'
         >
-         <i class="fa-solid fa-arrow-right"></i>
+         <i className="fa-solid fa-arrow-right"></i>
         </Button>
         
         <Button

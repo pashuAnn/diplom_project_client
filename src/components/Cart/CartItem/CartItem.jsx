@@ -4,7 +4,7 @@ import {
   decrementItem,
   deleteItemFromCart,
   incrementItem,
-} from "../../../core/redux/redusers/cardReducer";
+} from "../../../core/redux/redusers/cardSlice";
 import { Link } from "react-router-dom";
 import s from "./CartItem.module.css";
 export default function CartItem({

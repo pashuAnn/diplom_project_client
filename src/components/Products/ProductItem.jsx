@@ -1,7 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../../core/redux/redusers/cardReducer";
+import { addToCart } from "../../core/redux/redusers/cardSlice";
 import s from "./ProductsItem.module.css";
 export default function Item({ id, title, image, price, discont_price,description }) {
   const dispatch = useDispatch();

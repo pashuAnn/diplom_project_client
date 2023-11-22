@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { getDiscontProducts } from "../../../core/redux/redusers/allProductsReducer";
+import { getDiscontProducts } from "../../../core/redux/redusers/allProductsSlice";
 import { useDispatch } from "react-redux";
-import { getDiscontProductsByCategory } from "../../../core/redux/redusers/productsByCatReduser";
+import { getDiscontProductsByCategory } from "../../../core/redux/redusers/productsByCatSlice";
 import "./DiscountForm.css";
 export default function DiscontForm() {
   const dispatch = useDispatch();
@@ -20,8 +20,8 @@ export default function DiscontForm() {
   };
 
   return (
-    <div class="checkbox-wrapper-3">
-      <div class="checkbox-container">
+    <div className="checkbox-wrapper-3">
+      <div className="checkbox-container">
         <p>Editors choice</p>
 
         <input
@@ -32,7 +32,7 @@ export default function DiscontForm() {
           id="cbx-3"
         />
 
-        <label for="cbx-3" class="toggle">
+        <label for="cbx-3" className="toggle">
           <span></span>
         </label>
       </div>

@@ -3,7 +3,7 @@ import './App.css';
 import NavMenu from './components/NavMenu/NavMenu';
 import MainPage from './pages/MainPage/MainPage'
 import Catalog from './pages/CatalogPage/Catalog'
-import CardPage from './pages/CardPage/CartPage'
+import CartPage from './pages/CartPage/CartPage'
 import ItemsFromCategoryPage from './pages/ItemsFromCategoryPage/ItemsFromCategory'
 import SingleItemPage from './pages/SingleItemPage/SingleItemPage'
 import AllItemPage from './pages/AllItemPage/AllItemPage'
@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<MainPage />}></Route>
         <Route path="/catalog" element={<Catalog/>}></Route> 
-        <Route path="/card" element={<CardPage/>}></Route>
+        <Route path="/cart" element={<CartPage/>}></Route>
         <Route path='/categories/:id' element={<ItemsFromCategoryPage/>}></Route>
         <Route path='/products/:id' element={<SingleItemPage/>}></Route>
         <Route path="/allProducts" element={<AllItemPage/>}></Route>
