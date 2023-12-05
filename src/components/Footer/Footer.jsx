@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { Button } from '../Button/Button'
 import { Link } from 'react-router-dom'
+import logo from '../../utils/BackYardLogo.png'
 export default function Footer() {
   return (
     <div className='footer-container'>
@@ -44,7 +45,7 @@ export default function Footer() {
           <Button buttonStyle='btn--outline'>Subscribe</Button>
         </form>
       </div> 
-    </section>*/
+    </section>
     <div className='footer-links'>
       <div className='footer-link-wrapper'>
         <div className='footer-link-items'>
@@ -69,6 +70,7 @@ export default function Footer() {
         <div className='footer-logo'>
           <Link to='/' className='social-logo'>
           BackYard
+          <img src={logo} alt="logo" className='footer-logo' />
           <i className="fa-solid fa-house-tree"></i>
           </Link>
         </div>

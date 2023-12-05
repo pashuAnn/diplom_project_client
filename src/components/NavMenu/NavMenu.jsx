@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import { Button } from "../Button/Button";
+import logo from '../../utils/BackYardLogo.png'
 
 export default function NavMenu() {
   const [click, setClick] = useState(false);
@@ -23,7 +24,7 @@ export default function NavMenu() {
         <div className="navbar-container">
           <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           BackYard
-          <i className="fa-solid fa-house-tree"></i>
+          <img src={logo} alt="logo" className="nav-logo-img" />
           </Link>
           <div className="menu-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"} />
@@ -67,11 +68,11 @@ export default function NavMenu() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                 Sign Up
+                <i className="fa-regular fa-right-to-bracket"></i>
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline" link='/signUp'>SIGN UP</Button>}
+          {button && <Button buttonStyle="btn--outline" link='/signUp'></Button>}
         </div>
       </nav>
     </>

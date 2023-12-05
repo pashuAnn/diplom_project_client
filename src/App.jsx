@@ -11,6 +11,7 @@ import SalesPage from './pages/SalesPage/SalesPage'
 import SignUpPage from './pages/SignUpPage/SignUp' 
 import ErrorView from './pages/ErrorViewPage/ErrorView'
 import Footer from './components/Footer/Footer'
+import OrderConfirmation from './components/Cart/CartContainer/OrderConformation'
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
 import { getAllCategories } from './UI/requsts/getAllCategories';
@@ -38,6 +39,7 @@ function App() {
         <Route path="/sale" element={<SalesPage/>}></Route>
         <Route path="/signUp" element={<SignUpPage/>}></Route> 
         <Route path="/*" element={<ErrorView/>}></Route>
+        <Route path="/orderConfirmation" element={<OrderConfirmation />} />
       </Routes>
 
       <Footer/>

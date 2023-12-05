@@ -4,6 +4,7 @@ import CartItem from "../CartItem/CartItem";
 import { deleteAllItems } from "../../../core/redux/redusers/cardSlice"
 import s from "./CartContainer.module.css";
 import { Link } from "react-router-dom";
+
 export default function CartContainer() {
   const dispatch = useDispatch();
   
@@ -17,6 +18,7 @@ export default function CartContainer() {
   useEffect(() => {
     localStorage.setItem("product", JSON.stringify(cartState));
   }, [cartState]);
+  
   return (
     <div>
       {cartState.length > 0 ? (
@@ -29,9 +31,12 @@ export default function CartContainer() {
             </div>
             <div className={s.orderContainer}>
               <h3>Details </h3>
-
               <p>Total: ${total.toFixed(2)}</p>
-
+              <Link to="/orderConfirmation">
+                <div className={s.orderBtn}>
+                  Order
+                </div>
+              </Link>
               <div
                 className={s.clearCartBtn}
                 onClick={() => dispatch(deleteAllItems())}
@@ -45,7 +50,7 @@ export default function CartContainer() {
         <div className={s.emptyCartContainer}>
           <div className={s.emptyCartWrapper}>
             <div className={s.emptyCartIcon}>
-              <i class="fa-solid fa-basket-shopping"></i>
+              <i className="fa-solid fa-basket-shopping"></i>
             </div>
             <div className={s.emptyCartText}>
               <h3>Your cart is currently empty</h3>

@@ -9,25 +9,23 @@ export default function HomeSection() {
       <h1>WELCOME</h1>
       <p>Check out our best offers this week</p>
       <div className='hero-btns'>
-        <Button
+        {/* <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
           link='/sale'
         >
-         <i className="fa-solid fa-arrow-right"></i>
         </Button>
         
         <Button
           className='btns'
           buttonStyle='btn--primary'
           buttonSize='btn--large'
-          onClick={console.log('hey')}
           link='/sale'
         >
-         Sale
-        </Button>
-      
+          Get Sale <i class="fa-solid fa-arrow-right"></i>
+        </Button> */}
+      <Button buttonStyle="btn--outline" link='/discounts' iconClass="fa-solid fa-arrow-right">GET DISCOUNTS</Button>
       </div>
     </div>
   
