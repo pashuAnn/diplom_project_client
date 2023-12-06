@@ -29,10 +29,10 @@ export default function Footer() {
       </div>
    <section className='footer-subscription'>
       <p className='footer-subscription-heading'>
-        Join the Name newsletter,so you don't miss anything
+        Subscribe so you don`t miss our new products
       </p>
       <p className='footer-subscription-text'>
-        You can unsubscribe at any time.
+        We hope you will stay with us for a long time
       </p>
       <div className='input-areas'>
         <form>
@@ -42,7 +42,7 @@ export default function Footer() {
             type='email'
             placeholder='Your Email'
           />
-          <Button buttonStyle='btn--outline'>Subscribe</Button>
+          <Button>Subscribe</Button>
         </form>
       </div> 
     </section>
@@ -71,7 +71,6 @@ export default function Footer() {
           <Link to='/' className='social-logo'>
           BackYard
           <img src={logo} alt="logo" className='footer-logo' />
-          <i className="fa-solid fa-house-tree"></i>
           </Link>
         </div>
         <small className='website-rights'> BackYard © 2023</small>

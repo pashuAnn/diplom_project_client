@@ -1,4 +1,4 @@
-import { loadAllCategories } from "../../core/redux/redusers/categoriesSlice"
+import { loadAllCategories } from "../../core/redux/slices/categoriesSlice"
 import { serverLink } from './server'
 
 export const getAllCategories = () => (dispatch) => {

@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./NavMenu.css";
 import { Button } from "../Button/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faRightToBracket } from "@fortawesome/free-solid-svg-icons";
 import logo from '../../utils/BackYardLogo.png'
 
 export default function NavMenu() {
@@ -68,7 +70,7 @@ export default function NavMenu() {
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                <i className="fa-regular fa-right-to-bracket"></i>
+              <FontAwesomeIcon className="signUpBtn" icon={faRightToBracket} />
               </Link>
             </li>
           </ul>

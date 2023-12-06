@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 75vh;
+    height: 100vh;
     width: 100%;
   }
   
@@ -21,24 +21,5 @@
     margin: 5px 0;
   }
   
-  .returnBtn {
-    margin-top: 20px; 
-    padding: 15px 0;
-    background: #2d9a6e92;
-    width: 50%; 
-    border: 0.5px solid rgba(255, 255, 255, 0.5);
-    color: white;
-    backdrop-filter: blur(5px);
-    border-radius: 5px;
-    font-weight: 400;
-    align-self: center; 
-  }
   
-  .returnBtn > i {
-    font-size: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 10px;
-  }
   

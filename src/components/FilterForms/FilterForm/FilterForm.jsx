@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { filterProducts } from '../../../core/redux/redusers/allProductsSlice'
-import { filterProductsByCategory } from '../../../core/redux/redusers/productsByCatSlice'
+import { filterProducts } from '../../../core/redux/slices/allProductsSlice'
+import { filterProductsByCategory } from '../../../core/redux/slices/productsByCatSlice'
 import s from'./FilterForm.module.css'
 export default function FilterForm() {
   const dispatch = useDispatch()

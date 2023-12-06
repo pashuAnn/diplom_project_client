@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { getDiscontProducts } from "../../../core/redux/redusers/allProductsSlice";
+import { getDiscontProducts } from "../../../core/redux/slices/allProductsSlice";
 import { useDispatch } from "react-redux";
-import { getDiscontProductsByCategory } from "../../../core/redux/redusers/productsByCatSlice";
+import { getDiscontProductsByCategory } from "../../../core/redux/slices/productsByCatSlice";
 import "./DiscountForm.css";
 export default function DiscontForm() {
   const dispatch = useDispatch();
@@ -32,7 +32,7 @@ export default function DiscontForm() {
           id="cbx-3"
         />
 
-        <label for="cbx-3" className="toggle">
+        <label htmlFor="cbx-3" className="toggle">
           <span></span>
         </label>
       </div>

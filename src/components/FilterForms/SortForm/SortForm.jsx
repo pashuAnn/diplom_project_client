@@ -1,7 +1,7 @@
 import React from 'react'
 import {useDispatch} from 'react-redux'
-import { sortProducts } from '../../../core/redux/redusers/allProductsSlice'
-import { sortProductsByCategory } from '../../../core/redux/redusers/productsByCatSlice'
+import { sortProducts } from '../../../core/redux/slices/allProductsSlice'
+import { sortProductsByCategory } from '../../../core/redux/slices/productsByCatSlice'
 import s from './SortForm.module.css'
 export default function SortForm() {
     const dispatch = useDispatch()

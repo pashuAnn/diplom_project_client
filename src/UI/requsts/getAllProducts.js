@@ -1,6 +1,6 @@
-import { loadAllProducts } from "../../core/redux/redusers/allProductsSlice";
-import { loadProductByCategory } from "../../core/redux/redusers/productsByCatSlice";
-import { loadSingleProduct } from "../../core/redux/redusers/singleProdSlice";
+import { loadAllProducts } from "../../core/redux/slices/allProductsSlice";
+import { loadProductByCategory } from "../../core/redux/slices/productsByCatSlice";
+import { loadSingleProduct } from "../../core/redux/slices/singleProdSlice";
 import { serverLink } from "./server";
 
 export const getAllProducts = () => {

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CartItem from "../CartItem/CartItem";
-import { deleteAllItems } from "../../../core/redux/redusers/cardSlice"
+import { deleteAllItems } from "../../../core/redux/slices/cardSlice"
 import s from "./CartContainer.module.css";
 import { Link } from "react-router-dom";
 

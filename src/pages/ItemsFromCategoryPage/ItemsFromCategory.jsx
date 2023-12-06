@@ -10,11 +10,11 @@ import FIlterForms from "../../components/FilterForms/FilterForms";
 export default function ItemsFromCategory() {
   const { id } = useParams();
   const dispatch = useDispatch();
-  useEffect(() => dispatch(getProductsByCategory(id)), []);
+  useEffect(() => dispatch(getProductsByCategory(id)), [dispatch, id]);
 
   const category_state = useSelector(store => store.productsByCategory.data);
   const category_name = useSelector(store => store.productsByCategory.category);
-console.log(category_state);
+  console.log(category_state);
   return (
     <div>
       <h1>{category_name?.title}</h1>

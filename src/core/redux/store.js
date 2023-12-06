@@ -1,9 +1,9 @@
 import { configureStore } from '@reduxjs/toolkit';
-import categoriesSlice from '../../core/redux/redusers/categoriesSlice'
-import productsByCatSlice from '..//../core/redux/redusers/productsByCatSlice';
-import allProductsSlice from '..//../core/redux/redusers/allProductsSlice';
-import singleProdSlice from '../../core/redux/redusers/singleProdSlice';
-import cardSlice from '../../core/redux/redusers/cardSlice';
+import categoriesSlice from '../../core/redux/slices/categoriesSlice'
+import productsByCatSlice from '..//../core/redux/slices/productsByCatSlice';
+import allProductsSlice from '..//../core/redux/slices/allProductsSlice';
+import singleProdSlice from '../../core/redux/slices/singleProdSlice';
+import cardSlice from '../../core/redux/slices/cardSlice';
 
 export const store = configureStore({
   reducer: {

@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getSingleProduct } from "../../UI/requsts/getAllProducts";
 import s from "./SingleItem.module.css";
-import { addToCart } from "../../core/redux/redusers/cardSlice";
+import { addToCart } from "../../core/redux/slices/cardSlice";
 
 export default function SingleItemPage() {
   const dispatch = useDispatch();
